@@ -8,6 +8,11 @@
     min-height: 100vh;
 }
 
+.homee {
+    opacity: 0;
+    transition: 0.5;
+}
+
 .homee a {
     background-color: #000000;
     padding: 10px 15px;
@@ -772,3 +777,4 @@ footer a:nth-of-type(4):hover{
 }
 
 }
+
