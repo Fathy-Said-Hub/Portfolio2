@@ -1,28 +1,16 @@
-let arro = document.querySelector(".homee");
-
-window.onscroll = function () {
-    if (this.scrollY >= 500) {
-        arro.style.opacity = 1;
-    } else {
-        arro.style.opacity = 0;
-    }
-}
-
 let element = document.getElementsByClassName("onReload")[0];
 console.log(element)
 let h1 = document.getElementsByTagName("h1")[0];
-
 
 setTimeout(function () {
     element.classList.add("remove")
     h1.style.cssText = "opacity: 0;";
 }, 2000)
 
-
+let arro = document.querySelector(".homee");
 let leftDiv1 = document.getElementsByClassName("animate-slide-in-left")[0];
 let leftDiv2 = document.getElementsByClassName("animate-slide-in-left")[1];
 let rightDiv = document.getElementsByClassName("animate-slide-in-right")[0];
-
 let leftDiv3 = document.getElementsByClassName("animate-slide-in-left1")[0];
 let leftDiv4 = document.getElementsByClassName("animate-slide-in-left1")[1];
 let leftDiv5 = document.getElementsByClassName("animate-slide-in-left1")[2];
@@ -44,6 +32,12 @@ let bottomDiv3 = document.getElementsByClassName("animate-bottom-in-top")[2];
 let bottomDiv4 = document.getElementsByClassName("animate-bottom-in-top")[3];
 
 window.addEventListener('scroll', function () {
+    if (this.scrollY >= 500) {
+        arro.style.opacity = 1;
+    } else {
+        arro.style.opacity = 0;
+    }
+    
     if (this.scrollY >= 1100) {
         leftDiv1.style.cssText = "animation: animateslideinleft 3s ease-out forwards;";
         leftDiv2.style.cssText = "animation: animateslideinleft 3s ease-out forwards;";
@@ -112,3 +106,4 @@ window.addEventListener('scroll', function () {
         bottomDiv4.style.cssText = "animation: none;";
     }
 })
+
