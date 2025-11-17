@@ -1,3 +1,55 @@
+.onReload {
+    width: 100%;
+    height: 100dvh;
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 3s;
+    background-color: #fff;
+}
+
+.onReload h1 {
+    opacity: 1;
+    transition: .5s;
+    font-size: 6rem;
+}
+
+.remove {
+    height: 0dvh;
+}
+
+.animate-slide-in-left {
+    animation: animateslideinleft 1s ease-out forwards;
+}
+
+@keyframes animateslideinleft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-slide-in-right {
+    animation: animateslideinright 1s ease-out forwards;
+}
+
+@keyframes animateslideinright {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 /*Start Home*/
 
 .sourcenav {
@@ -725,6 +777,61 @@ footer a:nth-of-type(4):hover{
 .menu #close-icon{
     display: none;
 }
+.animate-slide-in-left1 {
+        animation: animateslideinleft1 1s ease-out forwards;
+}
+@keyframes animateslideinleft1 {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-in-right1 {
+    animation: animateslideinright1 1s ease-out forwards;
+}
+@keyframes animateslideinright1 {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-top-in-bottom {
+    animation: animatetopinbottom 1s ease-out forwards;
+}
+@keyframes animatetopinbottom {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-bottom-in-top {
+    animation: animatebottomintop 1s ease-out forwards;
+}
+@keyframes animatebottomintop {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 }
 
 @media (min-width:769px) and (max-width:992px) {
@@ -791,6 +898,7 @@ footer a:nth-of-type(4):hover{
 }
 
 }
+
 
 
 
